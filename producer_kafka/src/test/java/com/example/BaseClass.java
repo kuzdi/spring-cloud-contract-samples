@@ -31,7 +31,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
 // remove::start[]
 @AutoConfigureMessageVerifier
-@EmbeddedKafka(partitions = 1, topics = {"topic1"})
+@EmbeddedKafka(partitions = 1, topics = {"topic1", "topic2"})
 // remove::end[]
 @ActiveProfiles("test")
 public abstract class BaseClass {
